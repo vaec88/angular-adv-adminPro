@@ -5,12 +5,10 @@ import { PagesRoutingModule } from './pages/pages.routing';
 import { AuthRoutingModule } from './auth/auth.routing';
 
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
-import { PromesasComponent } from './pages/promesas/promesas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', component: NoPageFoundComponent },
-  { path: 'promesas', component: PromesasComponent }
+  { path: '**', component: NoPageFoundComponent }
 ];
 
 @NgModule({
